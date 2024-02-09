@@ -1,0 +1,7 @@
+.footercontent{
+display: flex;
+justify-content: space-around;
+border-color: lightgray;
+margin-left: 3%;
+width: 97%;
+}

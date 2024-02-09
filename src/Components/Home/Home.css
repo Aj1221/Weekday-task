@@ -1,0 +1,36 @@
+.home-container {
+    display: flex;
+    width: 109%;
+  }
+  
+
+  .content {
+    background-color: #008B5D;
+    color: white;
+    width: 97%;
+    height: 14%;
+    margin-left: 9%;
+    margin-top: 4%;
+    display: flex;
+    border-radius: 6px;
+
+  }
+
+  .frameimage{
+    margin: 40%;
+  }
+
+  .innerContent{
+    margin-left: 6%;
+  }
+
+  .bottom{
+    margin-left: 10%;
+  }
+
+  .footer-line{
+    margin-left: 8%;
+    color: #E3E3E4;
+    border-top: 1px solid white;
+    width: 98%;
+  }

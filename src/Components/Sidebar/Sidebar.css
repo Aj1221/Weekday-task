@@ -1,0 +1,74 @@
+.sidebar {
+    width: 295px;
+    height: 200%;
+    color: black;
+    padding: 20px;
+    border-right: 1px solid lightgrey;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .menu-item i {
+    margin-right: 10px;
+  }
+  
+  .horizontal-line {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    width: 100%;
+    background-color: lightgray;
+  }
+  
+.icon{
+  margin-right: 2%;
+}
+
+.temp{
+  font-weight: bold;
+}
+
+.settingIcon{
+  font-size: 21px;
+  margin-left: 198px;
+}
+
+.menu-item-bottom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  margin-top:7%;
+}
+
+.horizontal-line-bottom{
+  border-top: 1px solid white;
+  margin-top: 20px;
+  width: 100%;
+  margin-top: 32%;
+}
+
+.line{
+  border-top: 1px solid white;
+
+}
+  
+.plus{
+  margin-left: 60%;
+}
