@@ -117,9 +117,6 @@ function SearchedJobs() {
     return true;
   });
 
-  console.log("jopbs", jobs);
-  console.log("filteredjobs", filteredJobs);
-
   const generateRows = () => {
     const rows = [];
     for (let i = 0; i < filteredJobs.length; i += 3) {
