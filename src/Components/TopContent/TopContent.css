@@ -1,0 +1,15 @@
+.topcontent-container {
+  margin-left: -36px;
+  width: 108%;
+  box-shadow: inset;
+}
+
+.banner-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px !important;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #d9fed3 !important;
+  height: 70px !important;
+}

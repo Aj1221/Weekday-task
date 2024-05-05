@@ -1,108 +1,65 @@
-import React from 'react';
-import './Sidebar.css'; 
+import React from "react";
+import "./Sidebar.css";
 import { FaSearch } from "react-icons/fa";
-import { BsStopwatch } from "react-icons/bs";
-import { RiArchiveDrawerLine } from "react-icons/ri";
-import { IoIosAddCircleOutline } from "react-icons/io"
-import { IoMdSettings } from "react-icons/io";
+import { BsPerson } from "react-icons/bs";
+import { MdCurrencyRupee } from "react-icons/md";
+import { BsPersonPlus } from "react-icons/bs";
+import { AiOutlineShareAlt } from "react-icons/ai";
+import { BsCardChecklist } from "react-icons/bs";
+import { FaThumbsUp } from "react-icons/fa";
+
 const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <div className="logo">
-        <img  src="/assets/comLogo.png" alt="Logo" />
-        <span >Resumizeme</span>
-      </div>
-      <hr className='line' />
-      <div className="menu-item">
-      <RiArchiveDrawerLine  className='icon'/>
-        <span className='temp'>My templates </span>
-      </div>
-      <div className="menu-item">
-        <FaSearch  className='icon'/>
-        <span className='temp'>  Search </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Software Engineer </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Computer hardware Engineer </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Network Engineer </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Technical Support </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Network administrator </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Management </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Data analysis </span>
-      </div>
-      <div className="menu-item">
-        <span> ⭐️ Computer technician </span>
-      </div>
-      <div className="menu-item">
-        <BsStopwatch  className='icon' />
-        <span> Past Search 1 </span>
-      </div>
-      <div className="menu-item">
-        <BsStopwatch className='icon' />
-        <span> Past Search 2 </span>
-      </div>
-      <div className="menu-item">
-        <BsStopwatch className='icon' />
-        <span> Computers and information... </span>
-      </div>
-      <div className="menu-item">
-        <BsStopwatch className='icon'/>
-        <span> Database Administrator </span>
-      </div>
-      <div className="menu-item">
-        <BsStopwatch className='icon'/>
-        <span> Computer security </span>
-      </div>
-      <div className="menu-item">
-        <BsStopwatch className='icon' />
-        <span> Computer System Analyst </span>
-      </div>
-      <div className="menu-item">
-      <RiArchiveDrawerLine className='icon' />
+    <div className="sidebar-container d-none d-md-block">
+      <div className="sidebar">
+        <div className="logo">
+          <img src="/assets/Weekdaylogo.png" alt="Logo" />
+        </div>
+        <hr className="line" />
+        <div className="menu-item ">
+          <span className="font-weight-dark">Looking For a Job </span>
+        </div>
+        <div className="menu-item">
+          <BsPerson className="icon" />
+          <span> My applied Jobs </span>
+        </div>
+        <div className="menu-item">
+          <FaSearch className="icon" />
+          <span> Search jobs </span>
+        </div>
 
-        <span> My boards </span>
-        <IoIosAddCircleOutline className='plus' />
-      </div>
-      <div className="menu-item">
+        <div className="menu-item">
+          <MdCurrencyRupee className="icon" />
+          <span> Search Salary </span>
+        </div>
+        <div className="menu-item">
+          <BsPersonPlus className="icon" />
+          <span> Ask for referral</span>
+        </div>
+        <hr></hr>
+        <div className="menu-item">
+          <span className="fw-100 ">RECOMMEND AND EARN</span>
+        </div>
+        <div className="menu-item-1">
+          <FaThumbsUp className="icon" />
+          <span> Recommend from shortlist </span>
+        </div>
+        <div className="menu-item-1">
+          <BsCardChecklist className="icon" />
+          <span> Recommend from specific company </span>
+        </div>
+        <div className="menu-item">
+          <AiOutlineShareAlt className="icon" />
+          <span> Refer this extension</span>
+        </div>
 
-        <span> 🗂️ Board 1 </span>
-      </div>
-      <div className="menu-item">
-
-        <span> 🗂️ Board 2 </span>
-      </div>
-      <div className="menu-item">
-
-        <span> 🗂️ Board 3 </span>
-      </div>
-      <div className="menu-item">
-
-        <span> 🔓 Boards agent 1</span>
-      </div>
-      <div className="menu-item">
-
-        <span> 🔓 Boards agent 1</span>
-      </div>
-      <div className="menu-item">
-
-        <span> 🔓 Boards agent 1</span>
-      </div>
-      <hr className="horizontal-line-bottom" />
-      <div className="menu-item-bottom">
-      <img alt='user' src='/assets/user.png'></img>
-      <IoMdSettings className='settingIcon' />
+        <div className="menu-item-bottom">
+          <img
+            className="profileimg"
+            alt="user"
+            src="/assets/profile.png"
+          ></img>
+        </div>
       </div>
     </div>
   );

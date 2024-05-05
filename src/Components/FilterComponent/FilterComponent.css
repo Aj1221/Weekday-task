@@ -1,0 +1,63 @@
+/* FilterComponent.css */
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between elements */
+  margin-bottom: 2%;
+  margin-left: 5%;
+}
+
+.select-component {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.select-component:hover,
+.select-component:focus {
+  border-color: #666; /* Change border color on hover/focus */
+}
+
+/* Style placeholder text */
+.select-component option[disabled] {
+  color: #999; /* Placeholder color */
+}
+
+/* Adjust input field style */
+.select-component[type="text"] {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Adjust input placeholder color */
+.select-component[type="text"]::placeholder {
+  color: #999;
+}
+
+/* Optional: Style submit button */
+
+.custom-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.custom-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}

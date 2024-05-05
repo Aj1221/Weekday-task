@@ -1,0 +1,106 @@
+/* SearchedJobs.css */
+
+.card {
+  /* transition: transform 0.3s, box-shadow 0.3s; */
+  transition: all 500ms ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.description-lines {
+  position: relative;
+  max-height: calc(1.5em * 5); /* Show first 5 lines */
+  overflow: hidden;
+}
+
+.description-lines p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last line */
+}
+
+.blurry-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(1.5em * 2); /* Height of two lines */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  ); /* Gradient for blurry effect */
+  pointer-events: none; /* Avoid interfering with mouse events */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  z-index: 1; /* Place above the text */
+}
+
+.spinner {
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.post {
+  border: 1px solid grey;
+  font-size: 10px;
+  width: 120px;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.company-box {
+  display: flex;
+}
+
+.company-data {
+  line-height: 3px;
+  margin-left: 10px;
+}
+
+.apply-button {
+  background-color: #54efc3; /* Button background color */
+  color: Black; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.apply-button :hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.custom-card {
+  width: 90%;
+}
+
+.exp {
+  margin-top: 10px;
+  line-height: 5px;
+}
+
+.list {
+  margin-bottom: 10px;
+}
+
+.card-content {
+  margin-bottom: 500px !important;
+}

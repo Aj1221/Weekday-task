@@ -1,36 +1,36 @@
 .home-container {
-    display: flex;
-    width: 109%;
-  }
-  
+  height: 100vh; /* Adjust height as needed */
+  margin: 0px !important;
+}
 
-  .content {
-    background-color: #008B5D;
-    color: white;
-    width: 97%;
-    height: 14%;
-    margin-left: 9%;
-    margin-top: 4%;
-    display: flex;
-    border-radius: 6px;
+/* Optional: If you want to customize the styles for specific components */
+.content {
+  background-color: #008b5d;
+  color: white;
+  height: 14%;
+  border-radius: 6px;
+}
+.frameimage {
+  margin: 40%;
+}
 
-  }
+.contents {
+  width: 83% !important;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
-  .frameimage{
-    margin: 40%;
-  }
+.innerContent {
+  margin-left: 6%;
+}
 
-  .innerContent{
-    margin-left: 6%;
-  }
+.bottom {
+  margin-left: 10%;
+}
 
-  .bottom{
-    margin-left: 10%;
-  }
-
-  .footer-line{
-    margin-left: 8%;
-    color: #E3E3E4;
-    border-top: 1px solid white;
-    width: 98%;
-  }
+.footer-line {
+  margin-left: 8%;
+  color: #e3e3e4;
+  border-top: 1px solid white;
+  width: 98%;
+}
